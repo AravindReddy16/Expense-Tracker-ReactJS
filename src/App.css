@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+    width: 300px;
+    height: 600px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-top: 5px solid red;
+    color: rgb(218, 3, 3);
+    margin-bottom: 7px;
 }
-
-.App-link {
-  color: #61dafb;
+.amount {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-left: 5px solid rgb(38, 0, 255);
+    border-right: 5px solid rgb(38, 0, 255);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 21px;
+    margin-bottom: 7px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moneystatus {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.income {
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    border-left: 5px solid rgb(2, 170, 2);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.expense {
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    border-right: 5px solid red;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.history-header {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid rgb(38, 0, 255);
+    border-right: 5px solid rgb(38, 0, 255);
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.history {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 7px;
+}
+.item-deposit, .item-expense {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.item-deposit {
+    border-left: 5px solid rgb(2, 170, 2);
+}
+.item-expense {
+    border-left: 5px solid red;
+}
+.inputbox {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox input {
+    width: 95%;
+    height: 70%;
+    padding: 0px 20px;
+    font-size: 23px;
+    border: 2px solid black;
+}
+.btns {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.btns button {
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+#dpt {
+    background-color: rgb(2, 170, 2);
+}
+#wd {
+    background-color: red;
 }
